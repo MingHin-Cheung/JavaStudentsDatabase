@@ -10,10 +10,11 @@ Project that utilize JavaFX graphics and SQL to show the students information in
 ```
 
 ## PieChart
-	Uses JavaFX to show the proportion of students for each GPA
-	*  Each segment has a different color;
-	*  Each segment has a legend showing the corresponding GPA, frequency and number of students;
-	*  The segments for the GPAs are displayed in alphabetical order.
+	Used JavaFX to show the proportion of students for each GPA
+
+*  Each segment has a different color;
+*  Each segment has a legend showing the corresponding GPA, frequency and number of students;
+*  The segments for the GPAs are displayed in alphabetical order.
 
 ## Built With
 
