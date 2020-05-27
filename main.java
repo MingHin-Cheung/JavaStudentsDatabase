@@ -80,72 +80,73 @@ public class Main extends Application {
         boolean result = (!studentResult && !courseResult && !classesResult);
         System.out.print("Table creation result: " + result );
         Statement insert = conn.createStatement();
-        //Students
-        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                VALUES (34524112,'Borys','Higgins','M','BH3123@citymail.cuny.edu')");
-                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                        VALUES (41245344,'Beck','Brown','M','BB13124@citymail.cuny.edu')");
-                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                VALUES (52389743,'Oakley','Flower','M','OF231@citymail.cuny.edu')");
-                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                        VALUES (56985239,'Safah','Dunkley','F','SD31783@citymail.cuny.edu')");
-                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                VALUES (41231614,'Dilara','Serrano','F','DS478@citymail.cuny.edu')");
-                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                        VALUES (58902138,'Florence','Bauer','F','FB313@citymail.cuny.edu')");
-                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                VALUES (45235231,'Tallulah','Reader','F','TR31413@citymail.cuny.edu')");
-                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                        VALUES (41212651,'Ubaid','Farley','M','UB847873@citymail.cuny.edu')");
-                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                VALUES (12412341,'Usama','Donnelly','M','UD38193@citymail.cuny.edu')");
-                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                        VALUES (64556344,'Caine','Brooks','M','CB37812@citymail.cuny.edu')");
-                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                VALUES (54524131,'Courtnie','Meadows','F','CM17873@citymail.cuny.edu')");
-                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                        VALUES (55324234,'Tiarna','Winters','F','TW37183@citymail.cuny.edu')");
-                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                VALUES (52123123,'Katya','Hampton','F','KH52412@citymail.cuny.edu')");
-                                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                        VALUES (14312331,'Humphrey','Moran','M','HM31473@citymail.cuny.edu')");
-                                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                VALUES (34545134,'Ivor','Power','M','IP312313@citymail.cuny.edu')");
-                                                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                        VALUES (45264141,'Kaycee','Byrne','M','KB5234@citymail.cuny.edu')");
-                                                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                VALUES (25343146,'Chantal','Kay','F','CK51241@citymail.cuny.edu')");
-                                                                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                        VALUES (23513413,'Fallon','Miller','M','FN14783@citymail.cuny.edu')");
-                                                                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                VALUES (41534412,'Maximus','Ashton','M','MA3143@citymail.cuny.edu')");
-                                                                                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                        VALUES (21731983,'Kate','Witt','F','KW3135@citymail.cuny.edu')");
-                                                                                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                VALUES (53452334,'Nichola','Frank','F','NF513@citymail.cuny.edu')");
-                                                                                                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                        VALUES (43243123,'Joann','Joyner','F','JJ41331@citymail.cuny.edu')");
-                                                                                                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                                VALUES (53464343,'Rubie','Neville','F','RN5244@citymail.cuny.edu')");
-                                                                                                                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                                        VALUES (23412133,'Kayley','Albert','F','KA5123@citymail.cuny.edu')");
-                                                                                                                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                                                VALUES (12334234,'Billie','Buckley','F','BB42341@citymail.cuny.edu')");
-                                                                                                                                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                                                        VALUES (13980134,'Cassidy','Head','M','CH1314@citymail.cuny.edu')");
-                                                                                                                                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                                                                VALUES (11191219,'Tatiana','Nunez','M','TN454@citymail.cuny.edu')");
-                                                                                                                                                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                                                                        VALUES (12345567,'Tre','Maldonado','M','TM13124@citymail.cuny.edu')");
-                                                                                                                                                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                                                                                VALUES (51891187,'Shakeel','Gibbons','M','SG45345@citymail.cuny.edu')");
-                                                                                                                                                                                                                                                insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                                                                                        VALUES (18190256,'Trystan','Downs','M','TD3524@citymail.cuny.edu')");
-                                                                                                                                                                                                                                                        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
-                                                                                                                                                                                                                                                                VALUES (18178121,'Rylee','Sellers','M','RS3423@citymail.cuny.edu')");
 
-                                                                                                                                                                                                                                                                //Courses
-                                                                                                                                                                                                                                                                insert.execute("INSERT INTO courses (courseID,courseTitle,department) VALUES
+         //Students
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (34524112,'Borys','Higgins','M','BH3123@citymail.cuny.edu')");
+         insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (41245344,'Beck','Brown','M','BB13124@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (52389743,'Oakley','Flower','M','OF231@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (56985239,'Safah','Dunkley','F','SD31783@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (41231614,'Dilara','Serrano','F','DS478@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (58902138,'Florence','Bauer','F','FB313@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (45235231,'Tallulah','Reader','F','TR31413@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (41212651,'Ubaid','Farley','M','UB847873@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (12412341,'Usama','Donnelly','M','UD38193@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (64556344,'Caine','Brooks','M','CB37812@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (54524131,'Courtnie','Meadows','F','CM17873@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (55324234,'Tiarna','Winters','F','TW37183@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (52123123,'Katya','Hampton','F','KH52412@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (14312331,'Humphrey','Moran','M','HM31473@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (34545134,'Ivor','Power','M','IP312313@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (45264141,'Kaycee','Byrne','M','KB5234@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (25343146,'Chantal','Kay','F','CK51241@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (23513413,'Fallon','Miller','M','FN14783@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (41534412,'Maximus','Ashton','M','MA3143@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (21731983,'Kate','Witt','F','KW3135@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (53452334,'Nichola','Frank','F','NF513@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (43243123,'Joann','Joyner','F','JJ41331@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (53464343,'Rubie','Neville','F','RN5244@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (23412133,'Kayley','Albert','F','KA5123@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (12334234,'Billie','Buckley','F','BB42341@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (13980134,'Cassidy','Head','M','CH1314@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (11191219,'Tatiana','Nunez','M','TN454@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (12345567,'Tre','Maldonado','M','TM13124@citymail.cuny.edu')");
+         insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (51891187,'Shakeel','Gibbons','M','SG45345@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (18190256,'Trystan','Downs','M','TD3524@citymail.cuny.edu')");
+        insert.execute("INSERT INTO students (studentID,firstName,lastName,sex,email)
+        VALUES (18178121,'Rylee','Sellers','M','RS3423@citymail.cuny.edu')");
+
+        //Courses
+        insert.execute("INSERT INTO courses (courseID,courseTitle,department) VALUES
         ('CSC220','Algorithms','CSC')");
         insert.execute("INSERT INTO courses (courseID,courseTitle,department) VALUES
         ('ENGR276','Engineering Economics','ENGR')");
@@ -456,3 +457,4 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+}
